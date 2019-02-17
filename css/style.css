@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', cursive, sans-serif;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.editor {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: 350px;
+}
+
+.editor textarea {
+	background: #1e1f20;
+	border: 1px solid #d3d3d3;
+	color: #d3d3d3;
+	font-size: 16px;
+	height: 100%;
+}
+
+#preview {
+	flex: 3;
+	height: 100vh;
+}
+
+.editor pre {
+	background: #1e1f20;
+	border: 1px solid rgb(211, 211, 211);
+	color: rgb(211, 211, 211);
+	flex: 1;
+	padding: 30px 10px;
+	margin: 0;
+	position: relative;
+}
+
+.editor pre:before {
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#html:before {
+	content: 'HTML';
+}
+
+#css:before {
+	content: 'CSS';
+}
+
+#js:before {
+	content: 'JS';
+}
